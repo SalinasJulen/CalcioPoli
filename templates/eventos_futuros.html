@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partidos que se jugarán en la SerieA">
+    <title>Eventos Futuros</title>
+
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" href="../static/logoEmpresa.png" type="image/x-icon">
+</head>
+
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+</style>
+<body>
+    <div class = "contenido">
+    <h1>Eventos Futuros</h1>
+
+    <nav class="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="eventos_pasados.html">Partidos Anteriores</a>
+        <a href="en_vivo.html">En vivo</a>
+        <a href="merch.html">Merchandising</a> 
+    </nav>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Equipo Local</th>
+                <th>Equipo Visitante</th>
+                <th>Fecha</th>
+                <th>Marcador</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for partido in eventos_futuros %}
+            <tr>
+                <td>{{ partido.equipo_local }}</td>
+                <td>{{ partido.equipo_visitante }}</td>
+                <td>{{ partido.fecha }}</td>
+                <td>Marcador no disponible, el partido aún no se ha jugado</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <footer id = "footer_principal">
+        @2024 calciopoli
+    </footer>
+</body>
+</html>

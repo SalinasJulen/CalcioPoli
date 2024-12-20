@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicio de sesión en CalcioPoli">
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="icon" href="logoEmpresa.png" type="image/x-icon">
+  <title>Inicio de Sesión</title>
+</head>
+<body>
+  
+  <form name="Inicio Sesión" method="POST" action="/login">
+  
+    <div class="form-row">
+        <h2>Inicia Sesión</h2>
+      <input type="hidden" name="db" value ="prueba_reto">
+      <input type="hidden" name="table" value ="Usuarios">
+      <input type="hidden" name="id">
+      <div class="form-group col">
+        <input type="text" class="form-control" name ="NombreUsuario" placeholder="Nombre de Usuario" required />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-lg-6">
+        <input type="password" class="form-control" name ="Contrasena" placeholder="Contraseña" required/>
+      </div>
+    
+        
+      </div>
+    </div>
+    <br>
+    <div class="boton_enviar">
+      <button class="boton_formulario">
+        Inicia Sesión
+      </button>
+    </div>
+    <p class="link"><a href="registro_sesion.html">¿No tienes cuenta?</a></p>
+  </form>
+
+
+</body>
+</html>
+
+
+

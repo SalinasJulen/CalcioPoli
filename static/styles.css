@@ -1,0 +1,170 @@
+h1{
+    text-align: center;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #3643ff;
+    color: whitesmoke;
+}
+
+
+.after_h1{
+    display: flex;
+    grid-template-columns: auto auto auto auto;
+}
+
+#logo_seriea{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 2/3;
+    width: 200px;
+    height: 200px;
+
+}
+
+.sidebar{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap : 5px;
+}
+
+
+.sidebar > a{
+
+    display: flex;
+    background-color: #df2e2e;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+
+
+ .botones_sesion{
+   
+    float:left;
+    display: flex;
+    background-color: #0fbb2c;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+    color:whitesmoke;
+    grid-column: 3/3;
+}
+
+
+.equipos_totales{
+    display: flex;
+    text-align: center;
+    justify-content: center;   
+}
+
+
+.elemento_tabla{
+    padding: 20px;
+    margin: 50px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    border: 2px solid black;
+}
+
+td {
+    border: 1px solid black; 
+    padding: 20px;
+    margin: 50px;
+}
+
+#footer_principal{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+.tabla_resultados{
+    background-color: bisque;
+    border : 3px solid black
+}
+.columna_tabla{
+    text-align: center;
+}
+
+.sobre_nosotros{
+    text-align: center;
+    font-size: 17px;
+    
+}
+
+MARQUEE{
+    color : white;
+    font-size: 26px;
+    background-color:#cc3b3b91
+}
+
+.descuentos{
+    border: 2px solid black;
+    background-color:#e04b467e
+}
+
+
+form{
+   text-align: center;
+}
+
+input{
+    background-color:#cc3b3b91 ;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    width: 300px;
+    border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:#cc3b3b91;
+}
+
+
+
+.boton_formulario{
+    background-color: #d6c384d3;
+    color: white;
+    padding: 15px;
+    border:none;
+    border-radius:25px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+
+
+input[placeholder="Nombre de Usuario"], input[placeholder="Contraseña"], input[placeholder="Correo Electrónico"]{
+    text-align: center;
+}
+
+

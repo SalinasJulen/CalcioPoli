@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Partidos en vivo de la SerieA">
+    <title>Eventos en Vivo</title>
+
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" href="../static/logoEmpresa.png" type="image/x-icon">
+</head>
+
+<style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+</style>
+<body>
+    
+
+    <div class = "contenido">
+        <h1>Eventos En vivo</h1>
+      
+     
+  
+      <nav class="sidebar">
+        <a href="index.html">Inicio</a>
+        <a href="eventos_pasados.html">Partidos Anteriores</a>
+        <a href="eventos_futuros.html">Próximos Partidos</a>
+        <a href="merch.html">Merchandising</a> 
+      </nav>
+      
+    <table>
+        <thead>
+            <tr>
+                <th>Equipo Local</th>
+                <th>Equipo Visitante</th>
+                <th>Marcador</th>
+                <th>Estado</th>
+                <th>Minuto de Juego</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for partido in en_vivo %}
+            <tr>
+                <td>{{ partido.equipo_local }} <img src ="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/1200px-AS_Roma_logo_%282017%29.svg.png" width="40px"></td>
+                <td>{{ partido.equipo_visitante }} <img src = "https://upload.wikimedia.org/wikipedia/commons/5/51/Juventus_FC_2017_logo.png" width="40px"></td>
+                <td>{{ partido.marcador_local }} - {{ partido.marcador_visitante }}</td>
+                <td>{{ partido.estado }}</td>
+                <td>{{ partido.minuto_partido }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+<br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Mensaje</th>
+                <th>miunto_partido</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+         
+            <tr>
+                <td>Tarjeta amarilla para Koné</td>
+                <td>10</td>
+              
+            </tr>
+
+            <tr>
+                <td>Gol de Vlahovic</td>
+                <td>31</td>
+              
+            </tr>
+
+            <tr>
+                <td>Gol de Dybala</td>
+                <td>55</td>
+              
+            </tr>
+           
+        </tbody>
+    </table>
+
+    <footer id = "footer_principal">
+        @2024 calciopoli
+    </footer>
+
+</div>
+</body>
+</html>

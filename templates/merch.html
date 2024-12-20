@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Merchandising de CalcioPoli y la SerieA">
+    <title>Merchandising</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css">
+    <link rel="icon" href="logoEmpresa.png" type="image/x-icon">
+    <style>
+        h2{
+            text-align: center;
+        }
+
+
+
+        @media (max-width: 1000px) {
+    .col-md-3{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    .col-md-3{
+      display: flex;
+      flex-direction: column;
+      width: 75%;
+    }
+  }
+
+
+  .pagination{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 1000px) {
+    .col-md-3{
+      height: 50%;
+    }
+  }
+
+
+  
+    </style>
+</head>
+<body>
+
+    <div class = "contenido">
+        <h1 class = "header">CalcioPoli</h1>
+        
+    
+    <div class = "after_h1">
+        <img id = "logo_seriea" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Swy1cy88i2gzsk3xRAgES2W8C9Tr6Rle-g&s" height="200px" width="400px">
+        <a class = "botones_sesion" href="iniciar_sesion.html" target="_blank">Iniciar Sesión</a>
+        <a class = "botones_sesion" href="registro_sesion.html" target="_blank">Registrarse</a>
+    </div>
+    
+        <nav class="sidebar">
+            <a href="index.html" class = "desplegable">Inicio</a> 
+            <a href="eventos_pasados.html">Partidos Anteriores</a>
+            <a href="en_vivo.html">En vivo</a>
+            <a href="eventos_futuros.html">Próximos Partidos</a>
+            
+            <!--Plantilla, clasificación,merch-->
+        </nav>
+
+    <h2 id="products">Productos</h2> <br>
+    <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                      Producto 1
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">ATALANTA</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Logo_Atalanta_Bergamo.svg/800px-Logo_Atalanta_Bergamo.svg.png" height="100px" alt = "Logo Atalanta"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Atalanta, <br>Precio: 75€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                     Producto 2
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">BOLOGNA</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bologna_F.C._1909_logo.svg/640px-Bologna_F.C._1909_logo.svg.png" height="100px" alt = "Logo Bolonia"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Bologna, <br>Precio: 65€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                     Producto 3
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">CAGLIARI</h5>
+                      <p class="card-text"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjvsXakaefRYWwRresAVW2VR9dXLQVfPs2qKhgLeA15CTU78pz_hqbU3tXR_8Wblk8dY8hS0wN7kd3UjMIdAauZ6hXVgpVE-WHhCskPlOpGnKhlEyFdblivgOs3UrjKTzGtUmBgW7y7g4M/s1600/Cagliari+Calcio.png" height="100px" alt = "Logo Calgiari"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Cagliari,<br> Precio: 60€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                     Producto 4
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">COMO 1907</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Logo_Como_1907_-_2019.svg/743px-Logo_Como_1907_-_2019.svg.png" height="100px" alt = "Logo Como"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Como 1907, <br>Precio: 65€
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <br>
+  
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 5
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">EMPOLI</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/9/94/Empoli_FC.png" height="100px" alt = "Logo Empoli"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Empoli,<br> Precio: 65€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 6
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">FIORENTINA</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg/1024px-ACF_Fiorentina_-_logo_%28Italy%2C_2022%29.svg.png" height="100px" alt = "Logo Fiorentina"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta de la Fiorentina, <br>Precio: 70€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 7
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">GENOA</h5>
+                      <p class="card-text"><img src="https://seeklogo.com/images/G/genoa-cricket-football-club-logo-C7D77680BA-seeklogo.com.png" height="100px" alt = "Logo Genoa"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Genoa,<br> Precio: 65€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 8
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">HELLAS VERONA</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/92/Hellas_Verona_FC_logo_%282020%29.svg/1200px-Hellas_Verona_FC_logo_%282020%29.svg.png" height="100px" alt = "Logo Hellas Verona"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Hellas Verona, <br> Precio: 65€
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <br>
+  
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 9
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">INTER DE MILAN</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/FC_Internazionale_Milano_2021.svg/2048px-FC_Internazionale_Milano_2021.svg.png" height="100px" alt = "Logo Inter"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Inter de Milan,<br> Precio: 90€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 10
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">JUVENTUS</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Juventus_FC_2017_logo.png"" height="100px" alt = "Logo Juve"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta de la Juventus,<br> Precio: 90€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 11
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">LAZIO</h5>
+                      <p class="card-text"><img src="https://logodownload.org/wp-content/uploads/2020/10/lazio-logo.png" height="100px" alt = "Logo Lazio"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta de la Lazio,<br> Precio: 80€
+                  </div>
+              </div>
+          </div>
+  
+   
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 12
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">LECCE</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/en/8/81/US_Lecce_Logo.png" height="100px" alt = "Logo Lecce"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Lecce,<br> Precio: 65€
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+  
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 13
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">MILAN</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Logo_of_AC_Milan.svg/1200px-Logo_of_AC_Milan.svg.png" height="100px" alt = "Logo Milan"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Milan,<br> Precio: 85€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 14
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">MONZA</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Logo_of_AC_Monza.png/800px-Logo_of_AC_Monza.png" height="100px" alt = "Logo Monza"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Monza,<br> Precio: 65€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 15
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">NAPOLES</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/SSC_Napoli_2024_%28deep_blue_navy%29.svg/1200px-SSC_Napoli_2024_%28deep_blue_navy%29.svg.png" height="100px" alt = "Logo Napoli"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Napoles,<br> Precio: 80€
+                  </div>
+              </div>
+          </div>
+  
+   
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 16
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">PARMA</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Logo_Parma_Calcio_1913_%28adozione_2016%29.png" height="100px" alt = "Logo Parma"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Parma,<br> Precio: 60€
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <br>
+  
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 17
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">ROMA</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/AS_Roma_logo_%282017%29.svg/1200px-AS_Roma_logo_%282017%29.svg.png" height="100px" alt = "Logo Roma"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta de la Roma,<br> Precio: 75€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 18
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">TORINO</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/Torino_FC_Logo.svg/1200px-Torino_FC_Logo.svg.png" height="100px" alt = "Logo Torino"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Torino,<br> Precio: 70€
+                  </div>
+              </div>
+          </div>
+  
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 19
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">UDINESE</h5>
+                      <p class="card-text"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Udinese_Calcio_2010.svg" height="100px" alt = "Logo Udinese"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Udinese,<br> Precio: 65€
+                  </div>
+              </div>
+          </div>
+  
+   
+          <div class="col-md-3">
+              <div class="card" style="width: 18rem;">
+                  <div class="card-header">
+                    Producto 20
+                  </div>
+                  <div class="card-body">
+                      <h5 class="card-title">VENEZIA</h5>
+                      <p class="card-text"><img src="https://www.teleadhesivo.com/es/img/asfs1769-png/folder/products-detalle-png/pegatinas-coches-motos-venezia-fc.png" height="100px" alt = "Logo Venezia"></p>
+                      <a href="#" class="btn btn-primary">Añadir al Carrito</a>
+                  </div>
+                  <div class="card-footer text-muted">
+                      Camiseta del Venezia,<br> Precio: 65€
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <footer id = "footer_principal">
+    @204 calciopoli
+</footer>
+</body>
+</html>

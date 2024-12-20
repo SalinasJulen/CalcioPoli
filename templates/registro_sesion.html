@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Registrarse en CalcioPoli">
+  <link rel="stylesheet" href="../static/styles.css">
+  <link rel="icon" href="logoEmpresa.png" type="image/x-icon">
+  <title>Registro</title>
+</head>
+<body>
+  
+  <form name="Registrarse" method="POST" action="/add_user">
+  
+    <div class="form-row">
+        <h2>Regístrate</h2>
+      <input type="hidden" name="db" value ="prueba_reto">
+      <input type="hidden" name="table" value ="Usuarios">
+      <input type="hidden" name="id">
+      <div class="form-group col">
+        <input type="text" class="form-control" name ="NombreUsuario" placeholder="Nombre de Usuario" required />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-lg-6">
+        <input type="password" class="form-control" name ="Contrasena" placeholder="Contraseña" required/>
+      </div>
+      <div class="form-group col-lg-6">
+        <input type="email" class="form-control" name="Email" placeholder="Correo Electrónico" required />
+        
+      </div>
+    </div>
+    <br>
+    <div class="boton_enviar">
+      <button class="boton_formulario">
+        Enviar
+      </button>
+    </div>
+    <p class="link"><a href="iniciar_sesion.html">¿Ya tienes cuenta?</a></p>
+  </form>
+
+
+</body>
+</html>
+
+
+
